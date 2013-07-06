@@ -1,0 +1,8 @@
+#!/bin/bash
+#   Find files with some given string.
+#
+#  Usage  
+#	  findstr /directory  "string"
+#
+find $1 -type f -exec grep -l $2  {} +
+
